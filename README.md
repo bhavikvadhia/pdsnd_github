@@ -13,9 +13,13 @@ station stats       - Most common start and end station as well as most common f
 trip duration stats - Total travel time and Mean travel time for all the rentals.
 user stats          - Counts for each User Type/ User Gender/Birth Year.
 
-
 ### Files used
 bikeshare.py
+
+### Data for cities available
+New York City
+Washington
+Chichago
 
 ### Credits
 https://github.com/udacity/pdsnd_github
