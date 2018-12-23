@@ -5,7 +5,8 @@
 Bikeshare Data analysis using python
 
 ### Description
-bikeshare.py is an interactive python script which takes input from the user about the city's data they need to see and about the particular month/day the user wants to see. 
+bikeshare.py is an interactive python script which takes input from the user about the city's data they need to see and about the particular month/day the user wants to see. \n
+Once the user selects perferences - the metrics are displayed and the user can also see individual rental records as well.
 
 ### Output Metrics
 time stats          - Most common Month,Day and Hour for bike rental. \n
