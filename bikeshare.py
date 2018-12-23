@@ -260,7 +260,7 @@ def main():
         print('*'*90)
         print('You will be exploring the data for {}, with data for {} and {}.'.format(city.title()+' cities' if city == 'all' else city.title(),month.title() + ' months' if month =='all' else month.title() + ' month',day.title() + ' days' if day == 'all' else day.title()))
         print('*'*90)
-        if input('Please Press Enter to continue. Or press anything else to select options again\n'):
+        if input('Please Press Enter to continue. Press anything else to select options again\n'):
             continue
         
         df = load_data(city, month, day)
