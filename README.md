@@ -1,15 +1,13 @@
-### Date created
-Include the date you created this project and README file.
+### 2018-12-22
 
-### Project Title
-Replace the Project Title
+### Bikeshare Data analysis using python
 
-### Description
-Describe what your project is about and what it does
+### bikeshare.py is an interactive python script which takes input from the user about the city's data they need to see and about the particular month/day the user wants to see. 
+
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://github.com/udacity/pdsnd_github
 
