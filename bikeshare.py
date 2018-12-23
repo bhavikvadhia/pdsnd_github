@@ -10,6 +10,24 @@ CITY_LIST = ['chicago','new york city','washington','all']
 MONTH_LIST = ['january','february','march','april','may','june','all']
 DAY_LIST = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday','all']
 
+def timedelta_to_str(td):
+    """
+    Returns Days,Hours,Minutes and Seconds for a given Timedelta input.
+
+    Args:
+        (timedelta) td - input timedelta datatype for conversion
+    Returns:
+        (int)td_days  - Number of days for the input timedelta
+        (int)td_hours - Number of hours post days for the input timedelta
+        (int)td_mins  - Number of minutes post day and hour for the input timedelta
+        (int)td_sec   - Number of seconds post day,hour and minutes for the input timedelta
+    """ 
+    td_days = td.days
+    td_hours = int(math.floor(td.seconds/60/60))
+    td_mins = int(math.floor(td.seconds/60) - math.floor(td.seconds/60/60)*60)
+    td_sec = int(round(td.seconds%60,0))
+    return td_days,td_hours,td_mins,td_sec
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -173,24 +191,6 @@ def station_stats(df):
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-def timedelta_to_str(td):
-    """
-    Returns Days,Hours,Minutes and Seconds for a given Timedelta input.
-
-    Args:
-        (timedelta) td - input timedelta datatype for conversion
-    Returns:
-        (int)td_days  - Number of days for the input timedelta
-        (int)td_hours - Number of hours post days for the input timedelta
-        (int)td_mins  - Number of minutes post day and hour for the input timedelta
-        (int)td_sec   - Number of seconds post day,hour and minutes for the input timedelta
-    """ 
-    td_days = td.days
-    td_hours = int(math.floor(td.seconds/60/60))
-    td_mins = int(math.floor(td.seconds/60) - math.floor(td.seconds/60/60)*60)
-    td_sec = int(round(td.seconds%60,0))
-    return td_days,td_hours,td_mins,td_sec
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
